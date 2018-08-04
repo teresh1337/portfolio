@@ -1,0 +1,132 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	display: table;
+	font-family: Lucida Console;
+}
+
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 80px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.logo {
+	letter-spacing: 1px;
+	float: left;
+	color: #fff;
+	font-size: 22px;
+	line-height: 80px;
+	font-family: Comic Sans MS;
+	padding: 0 6em;
+}
+
+.menu {
+	float: right;
+	line-height: 50px;
+	margin: 0 1em;
+}
+
+.menu ul {
+	list-style: none;
+}
+
+.menu ul li {
+	display: inline-block;
+}
+
+.menu ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 17px;
+	font-weight: lighter;
+	margin: 0 10px;
+}
+
+.nav_2:hover {
+	font-size: 17.5px;
+	margin: 0 8.8px;
+	border-bottom: 1px solid #fafafa;
+}
+
+ul li:nth-child(4) a {
+	color: #009f8b;
+	border: 1px solid #009f8b;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+ul li:nth-child(4) a:hover {
+	font-size: 18px;
+	margin: 0 7.9px;
+	border: 1px solid #060606;
+	color: #000;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	animation: Gradient 20s ease infinite;
+	background-size: 400% 400%;
+}
+
+	@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.header {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.header h1 {
+	color: #fff;
+	font-size: 46px;
+	font-weight: 400;
+	font-family: Lucida Console;
+}
+
+.header p {
+	color: #fff;
+	font-size: 23px;
+	font-weight: 100;
+	font-family: Lucida Console;
+}
+
+.header button {
+	color: #fff;
+	background: #009f8b;
+	padding: 18px 38px;
+	border: none;
+	font-size: 14px;
+	margin-top: 40px;
+	border-radius: 4px;
+	transition: .6s;
+	cursor: pointer;
+}
+
+.header button:focus {
+	outline: none;
+}
+
+.header button:hover {
+	background: #5F35E4;
+}
